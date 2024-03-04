@@ -6,8 +6,10 @@ internal class Program
     {
         //DiziGenel.Main(args);
        
-        DiziDongu.Main(args);
+        //DiziDongu.Main(args);
+        
+     DiziMetotlari.Main(args);
 
-        Console.WriteLine("Hello, World!");
+        
     }
 }

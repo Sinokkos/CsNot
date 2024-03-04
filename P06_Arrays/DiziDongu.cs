@@ -93,54 +93,54 @@ namespace P06_Arrays
             #endregion
 
             #region Hack03 (Workout)
-            // Kullanıcıdan alınan bir metin içindeki sesli harf sayısını bulan ve bulduklarını başka bir diziye yerleştiren p. parçacığını tasarlayınız.
+            //// Kullanıcıdan alınan bir metin içindeki sesli harf sayısını bulan ve bulduklarını başka bir diziye yerleştiren p. parçacığını tasarlayınız.
 
-            // Öncelikle seslerin olduğu bir dizi tanımı yapıyorum.
-            char[] sesliler = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü', };
+            //// Öncelikle seslerin olduğu bir dizi tanımı yapıyorum.
+            //char[] sesliler = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü', };
 
-            // Bulacağım seslileri yerleştireceğim bir dizi
-            char[] hangileri = new char[20];
+            //// Bulacağım seslileri yerleştireceğim bir dizi
+            //char[] hangileri = new char[20];
 
 
-            string metin = ""; //ekrandan alacağım metin bilgisi
-            int hindex = 0; //hangileri dizisinin index bilgisini tutacak
-            int adet = 0; //bulduğum sesli harf adedini tutacak
+            //string metin = ""; //ekrandan alacağım metin bilgisi
+            //int hindex = 0; //hangileri dizisinin index bilgisini tutacak
+            //int adet = 0; //bulduğum sesli harf adedini tutacak
 
-            Console.WriteLine("Lütfen metni giriniz :");
-            metin = Console.ReadLine().ToLower();
-            // Büyük harf girse bile küçüğe çevirdim
+            //Console.WriteLine("Lütfen metni giriniz :");
+            //metin = Console.ReadLine().ToLower();
+            //// Büyük harf girse bile küçüğe çevirdim
 
-            //  Not : aslında geri planda metin bilgisi de bir dizi gibi algılanabilir. {0, 1, 2..} gibi
+            ////  Not : aslında geri planda metin bilgisi de bir dizi gibi algılanabilir. {0, 1, 2..} gibi
 
-            // sesliler dizisiyle işe başlayacağız. 
-            // 1. for çevrimi sesliler dizisi içinde hareket edecek.
+            //// sesliler dizisiyle işe başlayacağız. 
+            //// 1. for çevrimi sesliler dizisi içinde hareket edecek.
 
-            for (int sesliindex = 0; sesliindex < sesliler.Length; sesliindex++)
-            {
-                // 2.for çevrimi metin dizisi içinde hareket edecek
-                // metnin başından sonuna kadar ilerlenecek
-                for (int metinindex=0; metinindex < metin.Length; metinindex++)
-                {
-                    // eğer metin içindeki bir karakter benim sesli içindeki karaktere uyuyor mu?
-                    if (metin[metinindex] == sesliler[sesliindex]) 
-                    {
-                        // başka bir diziye taşıyayım.
-                        hangileri[hindex] = metin[metinindex]; // bulduğum sesli harfin ne olduğunu metin [metinindex] ile bilebiliyorum
-                        hindex++; // bir sonraki eleman için
-                        adet++; // Bulduğum sesli harf adedini arttırıyorum.
-                    }
+            //for (int sesliindex = 0; sesliindex < sesliler.Length; sesliindex++)
+            //{
+            //    // 2.for çevrimi metin dizisi içinde hareket edecek
+            //    // metnin başından sonuna kadar ilerlenecek
+            //    for (int metinindex=0; metinindex < metin.Length; metinindex++)
+            //    {
+            //        // eğer metin içindeki bir karakter benim sesli içindeki karaktere uyuyor mu?
+            //        if (metin[metinindex] == sesliler[sesliindex]) 
+            //        {
+            //            // başka bir diziye taşıyayım.
+            //            hangileri[hindex] = metin[metinindex]; // bulduğum sesli harfin ne olduğunu metin [metinindex] ile bilebiliyorum
+            //            hindex++; // bir sonraki eleman için
+            //            adet++; // Bulduğum sesli harf adedini arttırıyorum.
+            //        }
 
-                }
+            //    }
                 
-                // iç içe for olayında en önce içteki for biter sonra dıştaki for a dönülür. Sora o biter.
+            //    // iç içe for olayında en önce içteki for biter sonra dıştaki for a dönülür. Sora o biter.
 
 
 
 
-            }
+            //}
 
-            Console.WriteLine($"Girmiş olduğunuz metinde {adet} adet sesli harf vardır.\n\n");
-            Console.WriteLine(hangileri);
+            //Console.WriteLine($"Girmiş olduğunuz metinde {adet} adet sesli harf vardır.\n\n");
+            //Console.WriteLine(hangileri);
 
 
             #endregion

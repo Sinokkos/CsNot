@@ -37,7 +37,7 @@ namespace P06_Arrays
             //Console.WriteLine($"foreach çevrimiyle elde edilen sonuç: {toplam2} ");
 
 
-            #endregion
+            #endregion 
 
             #region Hack02 (Workout)
             // Tanımlanan sayısal bir dizi içerisindeki sayıların negatif, pozitif, nötr olma durumlarını sayının yanına yazan programı parçacığı geliştiriniz.
@@ -48,30 +48,46 @@ namespace P06_Arrays
             //...
             //şeklinde
 
+
+            // Hack02 ye ek
+            // Bir de acaba pozitifden, negatiften, nötrden kaçar tane var? Bunları da çıkışta görebilelim
+            //pozitiflerin adedi...
+            //negatiflerin adedi...
+            //nötrlerin adedi...
+
             int[] sayilar = { 4, 5 - 15, 22, -34, 3, 0, 100 };
-
+            int pozadet = 0;
+            int negadet = 0;
+            int notradet = 0;
+                
+                
             //foreach kullanın
-                                 
-            foreach (int sayi in sayilar) 
-            {
-                //gelen sayının büyük 0 mı küçük 0 mı olduğunu anlamam lazım ki yanına hangi türden olduğunu yazabileyim
-                if (sayi > 0)
+
+            foreach (int sayi in sayilar)
                 {
-                    Console.WriteLine(sayi + "\tPozitiftir...");
+                    //gelen sayının büyük 0 mı küçük 0 mı olduğunu anlamam lazım ki yanına hangi türden olduğunu yazabileyim
+                    if (sayi > 0)
+                    {
+                        Console.WriteLine(sayi + "\tPozitiftir...");
+                        pozadet++;
+                    }
+
+                    else if (sayi < 0)
+                    {
+                        Console.WriteLine(sayi + "\tNegatiftir...");
+                        negadet++;
+                    }
+                    else
+                    {
+                        Console.WriteLine(sayi + "\tNötrdür...");
+                        notradet++;
+                    }
+
                 }
 
-                else if (sayi < 0) 
-                {
-                    Console.WriteLine(sayi + "\tNegatiftir...");
-                }
-                else
-                {
-                    Console.WriteLine(sayi + "\tNötrdür...");
-                }
-            
-            }
-
-
+            Console.WriteLine($"Pozitif sayıların adedi : {pozadet} ");
+            Console.WriteLine($"Pozitif sayıların adedi : {negadet} ");
+            Console.WriteLine($"Pozitif sayıların adedi : {notradet} ");
 
             #endregion
 

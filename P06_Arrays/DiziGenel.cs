@@ -74,22 +74,22 @@ namespace P06_Arrays
             int elemansayisi = myUCC12Team.Length - 1; //-1'in nedeni dizi index bilgisinin 0 dan başlaması
             // düzden
 
-            Console.WriteLine("Düzenden\n\n");
-            for (int i= 0; i <= elemansayisi; i++) 
-            {
-                Console.WriteLine($"Dizinin {i}. inci elemanı {myUCC12Team[i]} dır.. \n");
-                Console.WriteLine($"Dizinin {i}. inci elemanı {myUCC12Team[i]} dır.. \n");
-            }
+            //Console.WriteLine("Düzenden\n\n");
+            //for (int i= 0; i <= elemansayisi; i++) 
+            //{
+            //    Console.WriteLine($"Dizinin {i}. inci elemanı {myUCC12Team[i]} dır.. \n");
+            //    Console.WriteLine($"Dizinin {i}. inci elemanı {myUCC12Team[i]} dır.. \n");
+            //}
 
 
 
-            // tersten
-            Console.WriteLine("Tersten\n\n");
+            //// tersten
+            //Console.WriteLine("Tersten\n\n");
 
-            for (int index = elemansayisi; index >= 0; --index) 
-            {
-                Console.WriteLine($"Dizinin {index}. inci elemanı {myUCC12Team[index]} dır.. \n");
-            }
+            //for (int index = elemansayisi; index >= 0; --index) 
+            //{
+            //    Console.WriteLine($"Dizinin {index}. inci elemanı {myUCC12Team[index]} dır.. \n");
+            //}
 
             #endregion
 

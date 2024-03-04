@@ -7,16 +7,16 @@
         static void Main(string[] args)
         {
             #region İlk denemeler 
-            //string name = ""; // ilk değer verildi. hem de değişgen tanımlandı.
-            //string Name = ""; // yukardakinden tamamen farklı
+            //string name = ""; // ilk değer verildi. hem de değişgen tanımlandı. 
+            //string Name = ""; // yukardakinden tamamen farklı. Eğer büyük harf yazarsam program farklı değer olarak algılar.!!DiKKAT!!!
             //string nameDesc;
             //string NameDesc;
 
             //nameDesc = "Benim adım ";
             //NameDesc = "Kızımın adı ";
 
-            //name = "Ümit Karaçivi";
-            //Name = "Doğa Bengi Karaçivi";
+            //name = "Sinem Taşpınar";
+            //Name = "Lily";
 
             //Console.WriteLine(nameDesc + name + "\n\n");
             //Console.WriteLine(NameDesc + Name + "\n\n");

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "P01_HelloWorld": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}

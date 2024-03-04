@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_HelloWorld", "CsNot\P01_HelloWorld.csproj", "{B28412A1-5F12-4505-9C27-508BECB3602F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_HelloWorld", "CsNot\P01_HelloWorld.csproj", "{B28412A1-5F12-4505-9C27-508BECB3602F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PO2_VariableWorld", "PO2_VariableWorld\PO2_VariableWorld.csproj", "{D3B8688A-7874-4476-92CB-EF0D0BB223A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PO2_VariableWorld", "PO2_VariableWorld\PO2_VariableWorld.csproj", "{D3B8688A-7874-4476-92CB-EF0D0BB223A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PO3_TypeConversions", "PO3_TypeConversions\PO3_TypeConversions.csproj", "{5E978F30-711C-4407-A462-A8F464656ECD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PO3_TypeConversions", "PO3_TypeConversions\PO3_TypeConversions.csproj", "{5E978F30-711C-4407-A462-A8F464656ECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PO4_Operators", "PO4_Operators\PO4_Operators.csproj", "{39D5DE91-1592-403C-8F50-33CF8B2EDB38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PO4_Operators", "PO4_Operators\PO4_Operators.csproj", "{39D5DE91-1592-403C-8F50-33CF8B2EDB38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PO5_FlowMechanisms", "PO5_FlowMechanisms\PO5_FlowMechanisms.csproj", "{7D9ACE80-DC89-47AB-ABD9-FDFB8CF0B92C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PO5_FlowMechanisms", "PO5_FlowMechanisms\PO5_FlowMechanisms.csproj", "{7D9ACE80-DC89-47AB-ABD9-FDFB8CF0B92C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_Arrays", "P06_Arrays\P06_Arrays.csproj", "{380A2D27-6CBF-488E-ABF3-A79AFB2AE425}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7D9ACE80-DC89-47AB-ABD9-FDFB8CF0B92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D9ACE80-DC89-47AB-ABD9-FDFB8CF0B92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D9ACE80-DC89-47AB-ABD9-FDFB8CF0B92C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380A2D27-6CBF-488E-ABF3-A79AFB2AE425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380A2D27-6CBF-488E-ABF3-A79AFB2AE425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380A2D27-6CBF-488E-ABF3-A79AFB2AE425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380A2D27-6CBF-488E-ABF3-A79AFB2AE425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

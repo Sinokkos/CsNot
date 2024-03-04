@@ -30,23 +30,23 @@ namespace PO5_FlowMechanisms
             #region while 2
             // Ekrandan girilen bir sayının basamaklarını bulan program parçası
 
-            Console.WriteLine("Lütfen sayınızı giriniz :");
+            //Console.WriteLine("Lütfen sayınızı giriniz :");
 
-            ulong sayi = ulong.Parse(Console.ReadLine());
-            ulong ysayi = sayi; // basta sakladım.
+            //ulong sayi = ulong.Parse(Console.ReadLine());
+            //ulong ysayi = sayi; // basta sakladım.
 
-            int basamak = 0; // Kaç basamaklı olduğunu tutacağım değişgen
+            //int basamak = 0; // Kaç basamaklı olduğunu tutacağım değişgen
 
-            while (sayi > 0)
-            {
-                basamak++;
+            //while (sayi > 0)
+            //{
+            //    basamak++;
 
 
-                sayi = sayi / 10;
+            //    sayi = sayi / 10;
 
-            }
+            //}
 
-            Console.WriteLine($"Girdiğiniz sayı : {ysayi} ve {basamak} basamaklıdır...");
+            //Console.WriteLine($"Girdiğiniz sayı : {ysayi} ve {basamak} basamaklıdır...");
 
 
             #endregion

@@ -10,7 +10,7 @@ namespace Workout
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine($"Yuvarlama 1 - {Math.Round(0.5)}\n\n"); // . dan sonra gelen sayı 5 <= ise alt sayıya yuvarlanır.
+            Console.WriteLine($"Yuvarlama 2 - {Math.Round(0.5)}\n\n");   // . dan sonra gelen sayı 5 <= ise alt sayıya yuvarlanır.
             Console.WriteLine($"Yuvarlama 2 - {Math.Round(3.01)}\n\n");
             Console.WriteLine($"Yuvarlama 3 - {Math.Round(3.49)}\n\n");
             Console.WriteLine($"Yuvarlama 4 - {Math.Round(3.51)}\n\n");

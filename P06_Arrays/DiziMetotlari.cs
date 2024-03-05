@@ -81,43 +81,78 @@ namespace P06_Arrays
 
             #region 5. Dizi Sıralama
 
-            Array sehirler = Array.CreateInstance(typeof(string), 8);
-
-            sehirler.SetValue("İstanbul", 0);
-            sehirler.SetValue("Ankara", 1);
-            sehirler.SetValue("İzmir", 2);
-            sehirler.SetValue("Bursa", 3);
-            sehirler.SetValue("Adıyaman", 4);
-            sehirler.SetValue("Muğla", 5);
-            sehirler.SetValue("Trabzon", 6);
-            sehirler.SetValue("Rize", 7);
-
-            Console.WriteLine("Sırasız halde dizi\n\n");
-
-            foreach (string sehir in sehirler)
-                Console.Write(sehir + "  ");
-
-            Console.WriteLine("");
-
-            Console.WriteLine("Alfabetik sıralı halde dizi (A-Z)\n\n");
-
-            Arrays.Sort(sehirler);
-
-            foreach (string sehir in sehirler)
-                Console.Write(sehir + "  ");
-
-            Console.WriteLine("");
-            Console.WriteLine("Alfabetik sıralı halde dizi (Z-A)\n\n");
-
-            Arrays.Reverse(sehirler);
+            //Array sehirler = Array.CreateInstance(typeof(string), 8);
             
-            foreach (string sehir in sehirler)
-                Console.Write(sehir + "  ");
+
+            // DİKKAT!! CreatInstance yöntemiyle oluşturulan dizilere diziadi[4]=.... gibi bir yöntemle erişilemez!! 
+            // İşte o zaman .SetValue metodu yoluyla halledilir. 
+
+            //sehirler.SetValue("İstanbul", 0);
+            //sehirler.SetValue("Ankara", 1);
+            //sehirler.SetValue("İzmir", 2);
+            //sehirler.SetValue("Bursa", 3);
+            //sehirler.SetValue("Adıyaman", 4);
+            //sehirler.SetValue("Muğla", 5);
+            //sehirler.SetValue("Trabzon", 6);
+            //sehirler.SetValue("Rize", 7);
+
+            //Console.WriteLine("Sırasız halde dizi\n\n");
+
+            //foreach (string sehir in sehirler)
+            //    Console.Write(sehir + "  ");
+
+            //Console.WriteLine("");
+
+            //Console.WriteLine("Alfabetik sıralı halde dizi (A-Z)\n\n");
+
+            //Array.Sort(sehirler);
+
+            //foreach (string sehir in sehirler)
+            //    Console.Write(sehir + "  ");
+
+            //Console.WriteLine("");
+            //Console.WriteLine("Alfabetik sıralı halde dizi (Z-A)\n\n");
+
+            //Array.Reverse(sehirler);
+            
+            //foreach (string sehir in sehirler)
+            //    Console.Write(sehir + "  ");
+
+            // Hack
+            // dizim bu sefer 10 elemanlı sayısal bir dizi olsun. Eleman değerleri size ait...önce karışık sonra artan sırada sonra da azalan sırada ekrana yazdırma...
+
+            Array sayilar = Array.CreateInstance(typeof(int), 10);
+
+            sayilar.SetValue(4, 0);
+            sayilar.SetValue(10, 1);
+            sayilar.SetValue(33, 2);
+            sayilar.SetValue(1, 3);
+            sayilar.SetValue(599, 4);
+            sayilar.SetValue(4, 5);
+            sayilar.SetValue(89, 6);
+            sayilar.SetValue(123, 7); ;
+            sayilar.SetValue(2, 8); 
+            sayilar.SetValue(1234, 9);
+
+            Console.WriteLine("Sırasız halde dizi");
+
+            foreach (int sayi in sayilar)
+                Console.Write(sayi + "  ");
+
+            Console.WriteLine("");
+
+            Console.WriteLine("Alfabetik sıralı halde dizi (A-Z)");
+
+            foreach (int sayi in sayilar)
+                 Console.WriteLine(sayi + " ");
 
 
+            Console.WriteLine("");
 
-
-
+            Console.WriteLine("Alfabetik sıralı halde dizi (Z-A)");
+            
+            foreach (int sayi in sayilar)
+                Console.WriteLine(sayi + " ");
 
             #endregion
 

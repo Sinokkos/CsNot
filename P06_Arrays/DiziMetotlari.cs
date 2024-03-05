@@ -11,7 +11,7 @@ namespace P06_Arrays
         public static void Main(string[] args)
         {
 
-            #region Dizilerde kullanılan bazı metotlar
+            #region 1.Dizilerde kullanılan bazı metotlar
             //Getlength
 
             //int[] sayilar1 = { 1, 2, 87, 56, 76 };
@@ -29,21 +29,40 @@ namespace P06_Arrays
             #endregion
 
             #region diğer bir kullanım
-            int[][] dizi16 = new int[3][];
+            //int[][] dizi16 = new int[3][];
 
-            dizi16[0] = new int[] { 1, 2, 3 }; 
-            dizi16[1] = new int[] { 4, 5, 6, 7 };
-            dizi16[2] = new int[] { 8, 9 };
-            // dizinin bütün elemanlarını teker teker ekrana yazdıran pp
+            //dizi16[0] = new int[] { 1, 2, 3 }; 
+            //dizi16[1] = new int[] { 4, 5, 6, 7 };
+            //dizi16[2] = new int[] { 8, 9 };
+            //// dizinin bütün elemanlarını teker teker ekrana yazdıran pp
 
-            for (int i = 0; i < dizi16.GetLength(0); i++) // dikey gibi düşünebiliriz
-                for (int j = 0; j < dizi16[i].GetLength(0); j++) // yatay gibi düşünebiliriz
-                    //Console.WriteLine("dizi16[{0}][{1}]={2}", i, j, dizi16[i][j]);
-                    Console.WriteLine($"dizi16[{i}][{j}]={dizi16[i][j]}"); //$ ile yazdıldığında da böyle oluyor...
+            //for (int i = 0; i < dizi16.GetLength(0); i++) // dikey gibi düşünebiliriz
+            //    for (int j = 0; j < dizi16[i].GetLength(0); j++) // yatay gibi düşünebiliriz
+            //        //Console.WriteLine("dizi16[{0}][{1}]={2}", i, j, dizi16[i][j]);
+            //        Console.WriteLine($"dizi16[{i}][{j}]={dizi16[i][j]}"); //$ ile yazdıldığında da böyle oluyor...
 
             #endregion
 
+            #region 2. Create Instanse
 
+            // int türünden 5 elemanlı "dizi17" isimli bir dizi yaratınız.
+
+            Array dizi17 = Arrays.CreatInstance(typeof(int), 5);
+            
+            // int türünden 3x2x5 boyutunda 3 boyutlu dizi yaratımı
+            Array dizi18= Arrays.CreatInstance(typeof(int), 3,2,5);
+
+
+            //ilginç kullanım... yaratılırken ilk değerlerin atanması
+            int[] dizi19 = new int[5] { 2,3,4,5,6};
+
+            // Gerçekten ilginç
+
+            // dizi20 int ve 2x3x4x5x6 olarak 5 boyutlu hal aldı
+            Array dizi20 = P06_Arrays.CreateInstance(typeof(int), dizi19); //dinamik bir dizi yaratmış oldum. Yukarıdaki sayıları direkt dizi ismiyle ldım!!!
+
+
+            #endregion
 
 
             Console.ReadKey();

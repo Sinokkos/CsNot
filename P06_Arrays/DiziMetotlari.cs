@@ -29,7 +29,17 @@ namespace P06_Arrays
             #endregion
 
             #region diğer bir kullanım
+            int[][] dizi16 = new int[3][];
 
+            dizi16[0] = new int[] { 1, 2, 3 };
+            dizi16[1] = new int[] { 4, 5, 6, 7 };
+            dizi16[2] = new int[][] { 8, 9 };
+            // dizinin bütün elemanlarını teker teker ekrana yazdıran pp
+
+            for (int i = 0; i < dizi16.GetLength(0); i++)
+                for (int j = 0; j < dizi16.[j].GetLength(0); j++)
+                    Console.WriteLine("dizi16 [{0}][{1}]={2}" , i, j, dizi16[i][j]);
+             
 
             #endregion
 

@@ -67,16 +67,45 @@ namespace PO7_Functions
             #region 4. Round- Yuvarlama
             // parametre olarak verilen ondalıklı sayıyı en yakın tamsayıya yuvarlama işlemi yapıyor
 
-            Console.WriteLine($"Yuvarlama 1 - {Math.Round(0.5)}\n\n");
-            Console.WriteLine($"Yuvarlama 2 - {Math.Round(3.01)}\n\n");
-            Console.WriteLine($"Yuvarlama 3 - {Math.Round(3.49)}\n\n");
-            Console.WriteLine($"Yuvarlama 4 - {Math.Round(3.51)}\n\n");
-            Console.WriteLine($"Yuvarlama 5 - {Math.Round(3.50)}\n\n");
+            //Console.WriteLine($"Yuvarlama 1 - {Math.Round(0.5)}\n\n");
+            //Console.WriteLine($"Yuvarlama 2 - {Math.Round(3.01)}\n\n");
+            //Console.WriteLine($"Yuvarlama 3 - {Math.Round(3.49)}\n\n");
+            //Console.WriteLine($"Yuvarlama 4 - {Math.Round(3.51)}\n\n");
+            //Console.WriteLine($"Yuvarlama 5 - {Math.Round(3.50)}\n\n");
 
 
 
 
             #endregion
+
+            #region  5.- SquareRoot - Karakök
+
+            //Console.WriteLine($"Karakök 1 - {Math.Sqrt(4)}\n\n");
+            //Console.WriteLine($"Karakök 2 - {Math.Sqrt(3.01)}\n\n"); 
+            //Console.WriteLine($"Karakök 3 - {Math.Sqrt(3.49)}\n\n");
+            //Console.WriteLine($"Karakök 4 - {Math.Sqrt(3.51)}\n\n");
+            //Console.WriteLine($"Karakök 5 - {Math.Sqrt(3.50)}\n\n");
+
+            #endregion
+
+            #region 6. Ceiling
+            //parametrik olarak verilen ondalıkl sayısı yukarıya veya eğer bir tamsayı verilmişse tamsayının aynısına yuvarlama yapar.
+
+
+            //Console.WriteLine($"Tavana yuvarlama 1 - {Math.Ceiling(4.0)}\n\n");
+            //Console.WriteLine($"Tavana yuvarlama 2 - {Math.Ceiling(3.01)}\n\n");
+            //Console.WriteLine($"Tavana yuvarlama 3 - {Math.Ceiling(3.49)}\n\n");
+            //Console.WriteLine($"Tavana yuvarlama 4 - {Math.Ceiling(3.51)}\n\n");
+            //Console.WriteLine($"Tavana yuvarlama 5 - {Math.Ceiling(3.50)}\n\n");
+
+
+
+
+
+            #endregion
+
+
+
 
 
             Console.ReadKey();

@@ -36,12 +36,15 @@ namespace P06_Arrays
             dizi16[2] = new int[] { 8, 9 };
             // dizinin bütün elemanlarını teker teker ekrana yazdıran pp
 
-            for (int i = 0; i < dizi16.GetLength(0); i++)
-                for (int j = 0; j < dizi16[i].GetLength(0); j++)
-                    Console.WriteLine("dizi16[{0}][{1}]={2}", i, j, dizi16[i][j]);
-             
+            for (int i = 0; i < dizi16.GetLength(0); i++) // dikey gibi düşünebiliriz
+                for (int j = 0; j < dizi16[i].GetLength(0); j++) // yatay gibi düşünebiliriz
+                    //Console.WriteLine("dizi16[{0}][{1}]={2}", i, j, dizi16[i][j]);
+                    Console.WriteLine($"dizi16[{i}][{j}]={dizi16[i][j]}"); //$ ile yazdıldığında da böyle oluyor...
 
             #endregion
+
+
+
 
             Console.ReadKey();
         }

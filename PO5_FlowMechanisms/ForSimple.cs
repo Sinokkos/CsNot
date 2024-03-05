@@ -33,7 +33,7 @@ namespace PO5_FlowMechanisms
 
             #endregion
 
-            #region ekrandan alınacak 2 sayı arasındaki değerleri ekrana yazınız...
+            #region 2. ekrandan alınacak 2 sayı arasındaki değerleri ekrana yazınız...
             //int sayi1, sayi2;
 
             //Console.WriteLine("Lütfen 1. sayı :");
@@ -53,7 +53,7 @@ namespace PO5_FlowMechanisms
             #endregion
 
 
-            #region girilen iki sayı arasının toplamını veren programı yazınız. Sonuçta toplam gözüksün
+            #region 3. girilen iki sayı arasının toplamını veren programı yazınız. Sonuçta toplam gözüksün
 
             //int sayi1, sayi2, toplam;
 
@@ -78,7 +78,7 @@ namespace PO5_FlowMechanisms
             #endregion
 
 
-            #region Kullanıcının girdiği 2 sayının çarpma işlemini toplama kullanarak bulunuz ve yazınız.
+            #region 4. Kullanıcının girdiği 2 sayının çarpma işlemini toplama kullanarak bulunuz ve yazınız.
 
             //int sayi1, sayi2, sonuc;
 
@@ -102,7 +102,7 @@ namespace PO5_FlowMechanisms
 
             #endregion
 
-            #region Kullanıcıdan 10 6 adet sayı alınacak.(-,+) Çıkışta istenen durum...
+            #region 5. Kullanıcıdan 10 6 adet sayı alınacak.(-,+) Çıkışta istenen durum...
             // negatiflerin toplamını ayrı 
             // pozitiflerin toplamını ayrı göster
             // Örnek: Negatif sayıların toplamı = -24

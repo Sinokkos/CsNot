@@ -8,7 +8,7 @@ internal class Program
        
         //DiziDongu.Main(args);
         
-     DiziMetotlari.Main(args);
+        DiziMetotlari.Main(args);
 
         
     }

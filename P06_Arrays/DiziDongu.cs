@@ -131,7 +131,7 @@ namespace P06_Arrays
             //        }
 
             //    }
-                
+
             //    // iç içe for olayında en önce içteki for biter sonra dıştaki for a dönülür. Sora o biter.
 
 
@@ -144,6 +144,35 @@ namespace P06_Arrays
 
 
             #endregion
+
+            #region Hack 04
+            //Verilen {4, 5,-54, -76, -98, 3, 0, 212, -313} dizisi içerisindeli çift sayıların hatta uğraşabilirseniz tek sayıların da kaçar adet olduğunu ekrana yazdıran pp yi geliştiriniz.
+
+            int[] sayilar = { 4, 5, 54, 76, 98, 3, 0, 212, 313 };
+            int ciftadet = 0; // çift sayının adedinin tutulduğu değişken
+            int tekadet = 0;
+
+
+            //foreach kullanımı
+            //foreach (int sayi in sayilar)
+            //{
+            //    if (sayi $ 2 == 0) //mod işlemi uygulayarak kalanın kaç olduğunu anlıyorum
+            //    {
+            //        Console.WriteLine(sayi + "\tÇift sayı...");
+            //        ciftadet++;
+            //    else
+            //    {
+            //        Console.WriteLine(sayi + "\tTek sayı...");
+            //        tekadet++;
+            //    }
+
+            //}
+
+            //Console.WriteLine($"Çift sayıların adedi : {ciftadet} ");
+            //Console.WriteLine($"Tek sayıların adedi : {tekadet} ");
+
+            #endregion
+
 
             Console.ReadKey();
 

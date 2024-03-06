@@ -45,7 +45,7 @@
 
         #region 3. Biraz daha detaylı örnek
 
-        int bolunecek, bolen;
+        double bolunecek, bolen;
 
         try
         {
@@ -63,7 +63,7 @@
         }
         catch (DivideByZeroException e)
         {
-            Console.WriteLine($"Hata - Sıfıra bölüm işlemi gerçekleştirelemez...; Hata mesajı  : {e.Message}");
+            Console.WriteLine($"Hata - Sıfıra bölüm işlemi gerçekleştirelemez...; Hata mesajı  : {e.Message} \n");
 
            
         }
@@ -71,20 +71,23 @@
         catch (FormatException e)
         {
 
-            Console.WriteLine($"Hata - Sadece Int32 türünde veri girişi yapabilirsiniz...; Hata mesajı  : {e.Message}");
+            Console.WriteLine($"Hata - Sadece Int32 türünde veri girişi yapabilirsiniz...; Hata mesajı  : {e.Message} \n");
         }
 
         catch (OverflowException e) 
         {
-            Console.WriteLine($"Hata - Değişken sınırlarını aştınız...; Hata mesajı  : {e.Message}");
+            Console.WriteLine($"Hata - Değişken sınırlarını aştınız...; Hata mesajı  : {e.Message}\n");
         }
 
         catch (Exception e) //geri kalan tüm hata durumlarında
         {
-            Console.WriteLine($"Hata - Beklenmedik hata ...; Hata mesajı  : {e.Message}");
+            Console.WriteLine($"Hata - Beklenmedik hata ...; Hata mesajı  : {e.Message}\n");
         }
 
-
+        finally 
+        {
+            Console.WriteLine("Finally bloğu çalışıyor..." );
+        }
 
         #endregion
 

@@ -55,7 +55,7 @@ namespace PO9_Methods
 
             // int sonuc1 = HesaplaPrmli(kk, uk);
 
-            Console.WriteLine($"\nDikdörtgenin alanı = {sonuc1}");
+            Console.WriteLine($"\nDikdörtgenin alanı = {HesaplaPrmli(kk, uk)}");
 
 
             #endregion
@@ -64,7 +64,16 @@ namespace PO9_Methods
             // Uygun metot yapısına göre en uygun göreceğiniz yapıya göre
             // ekrandan alınacak 2 sayı için 4 (+,-,*,/) işlemi gerçekleştirecek pp
             // gerekiyorsa birden fazla metot da yazabilirsiniz.
+            // Hint : işlem tipi diye bir değişkende tutarak hangi işlemin istendiğini ve ona göre çalışmasını sağlayabilirsiniz
 
+            Console.WriteLine( "Lütfen 1. sayıyı giriniz :");
+            int sayi1= Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen 2. sayıyı giriniz :");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen 3. sayıyı giriniz :");
+            string islem= Console.ReadLine();
 
             #endregion
 
@@ -75,7 +84,7 @@ namespace PO9_Methods
 
         #region Methodlar
 
-        // region 01
+        // region 1 geri yok prmsiz
         private static void Hesapla()
         {
             Console.WriteLine("Lütfen kısa kenarı giriniz :");
@@ -91,7 +100,7 @@ namespace PO9_Methods
 
         }
 
-        //region 2
+        //region 2 geri yok prmli
         private static void Hesapla(int pkisakenar, int puzunkenar)
         {
             int alan = pkisakenar * puzunkenar;
@@ -99,7 +108,7 @@ namespace PO9_Methods
         }
 
 
-        // region 3
+        // region 3 geri var prmsiz
         private static int HesaplaPrmsiz()
         {
             // geriye değer döndüren metotlarda mutlaka return keyword ü olmalıdır
@@ -115,14 +124,22 @@ namespace PO9_Methods
         }
 
 
-        // region 4
-        private static int HesaplaPrmli(int kisa, int uzun)
+        // region 4 geri var prmli
+        private static int HesaplaPrmli(int kisak, int uzunk)
         {
-           return sonuc1; // Buraya bakarsın...
+           return kisak*uzunk; 
 
         }
-           
-             
+
+        // region Hack02
+        private static int DortIslem(int psayi1, int sayi2, string psecenek) 
+        {
+            // bütün iş burada dönecek
+            
+            return 0;
+
+
+        }
           
         
         

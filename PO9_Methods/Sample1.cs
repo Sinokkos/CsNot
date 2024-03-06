@@ -8,8 +8,8 @@ namespace PO9_Methods
 {
     internal class Sample1
     {
-       public static void Main(string[] args)
-       {
+        public static void Main(string[] args)
+        {
 
             // Hack 01
             // Dikdörtgen alanını hesaplayan bir metodun 4 farklı şeklinin incelenmesi
@@ -27,30 +27,60 @@ namespace PO9_Methods
             // hesap kitap metotda olacak .... dolayısıyla buradan almış olduğum bilgileri parametre olarak göndereceğim
 
 
+            //Console.WriteLine("Lütfen kısa kenarı giriniz :");
+            //int kk = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Lütfen uzun kenarı giriniz :");
+            //int uk = Convert.ToInt32(Console.ReadLine());
+
+            //Hesapla(kk, uk);
+
+            #endregion
+
+            #region 3. Geriye değer döndüren ve parametre almayan metot
+
+            //int sonuc = HesaplaPrmsiz();
+
+            //Console.WriteLine($"\nDikdörtgenin alanı = {sonuc}");
+
+            #endregion
+
+            #region 4. Geriye değer döndüren ve parametre alan metot
+
             Console.WriteLine("Lütfen kısa kenarı giriniz :");
             int kk = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Lütfen uzun kenarı giriniz :");
             int uk = Convert.ToInt32(Console.ReadLine());
 
-            Hesapla(kk, uk);
+            // int sonuc1 = HesaplaPrmli(kk, uk);
+
+            Console.WriteLine($"\nDikdörtgenin alanı = {sonuc1}");
+
 
             #endregion
 
+            #region Hack 02
+            // Uygun metot yapısına göre en uygun göreceğiniz yapıya göre
+            // ekrandan alınacak 2 sayı için 4 (+,-,*,/) işlemi gerçekleştirecek pp
+            // gerekiyorsa birden fazla metot da yazabilirsiniz.
+
+
+            #endregion
 
             Console.ReadKey();
 
 
-       }
+        }
 
         #region Methodlar
 
         // region 01
-        private static void Hesapla() 
+        private static void Hesapla()
         {
             Console.WriteLine("Lütfen kısa kenarı giriniz :");
-            int kk=Convert.ToInt32(Console.ReadLine());
-            
+            int kk = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("Lütfen uzun kenarı giriniz :");
             int uk = Convert.ToInt32(Console.ReadLine());
 
@@ -62,14 +92,41 @@ namespace PO9_Methods
         }
 
         //region 2
-        private static void Hesapla(int pkisakenar, int puzunkenar) 
-        { 
-            int alan= pkisakenar * puzunkenar;
+        private static void Hesapla(int pkisakenar, int puzunkenar)
+        {
+            int alan = pkisakenar * puzunkenar;
             Console.WriteLine($"\nDikdörtgenin alanı = {alan}");
         }
 
 
-        #endregion
+        // region 3
+        private static int HesaplaPrmsiz()
+        {
+            // geriye değer döndüren metotlarda mutlaka return keyword ü olmalıdır
+            Console.WriteLine("Lütfen kısa kenarı giriniz :");
+            int kk = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen uzun kenarı giriniz :");
+            int uk = Convert.ToInt32(Console.ReadLine());
+
+            int alan = kk * uk;
+
+            return alan;
+        }
+
+
+        // region 4
+        private static int HesaplaPrmli(int kisa, int uzun)
+        {
+           return sonuc1; // Buraya bakarsın...
+
+        }
+           
+             
+          
+        
+        
+         #endregion
 
     }
 

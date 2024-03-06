@@ -167,8 +167,11 @@ namespace PO9_Methods
                      
                     break;
 
+                default:
+                    Console.WriteLine("Lütfen doğru işlem kodu giriniz...");
+                    break;
 
-                
+
             }
 
 

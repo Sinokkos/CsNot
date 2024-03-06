@@ -47,15 +47,15 @@ namespace PO9_Methods
 
             #region 4. Geriye değer döndüren ve parametre alan metot
 
-            Console.WriteLine("Lütfen kısa kenarı giriniz :");
-            int kk = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen kısa kenarı giriniz :");
+            //int kk = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Lütfen uzun kenarı giriniz :");
-            int uk = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen uzun kenarı giriniz :");
+            //int uk = Convert.ToInt32(Console.ReadLine());
 
-            // int sonuc1 = HesaplaPrmli(kk, uk);
+            //// int sonuc1 = HesaplaPrmli(kk, uk);
 
-            Console.WriteLine($"\nDikdörtgenin alanı = {HesaplaPrmli(kk, uk)}");
+            //Console.WriteLine($"\nDikdörtgenin alanı = {HesaplaPrmli(kk, uk)}");
 
 
             #endregion
@@ -72,8 +72,12 @@ namespace PO9_Methods
             Console.WriteLine("Lütfen 2. sayıyı giriniz :");
             int sayi2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Lütfen 3. sayıyı giriniz :");
-            string islem= Console.ReadLine();
+            Console.WriteLine("\nİşlem türü (+,-,*,/) :");
+            string secenek= Console.ReadLine();
+
+            int sonuc=DortIslem(sayi1 , sayi2, secenek);
+
+            Console.WriteLine($" Yapmak istediğiniz {secenek} işleminin sonucu : {sonuc}");
 
             #endregion
 
@@ -132,11 +136,44 @@ namespace PO9_Methods
         }
 
         // region Hack02
-        private static int DortIslem(int psayi1, int sayi2, string psecenek) 
+        private static int DortIslem(int psayi1, int psayi2, string psecenek) 
         {
             // bütün iş burada dönecek
-            
-            return 0;
+            int sonuc=0;
+            switch (psecenek)
+            {
+                case "+":
+                    sonuc=psayi1 + psayi2;
+                    break;
+
+                case "-":
+                    sonuc= psayi1 - psayi2; 
+                    break;
+
+                case "*":
+                     sonuc= psayi1 * psayi2;
+                    break;
+                case "/":
+                    // ya sayi2 yi sıfır girerse
+                    try
+                    {
+                        sonuc=psayi1 / psayi2;
+                    }
+                    catch 
+                    {
+                        Console.WriteLine("sayı2 değeri 0...Lütfen düzgün değer giriniz.<çatık kaş>.");
+                        
+                    }
+                     
+                    break;
+
+
+                
+            }
+
+
+
+            return sonuc;
 
 
         }

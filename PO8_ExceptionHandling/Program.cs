@@ -43,7 +43,50 @@
 
         #endregion
 
+        #region 3. Biraz daha detaylı örnek
 
+        int bolunecek, bolen;
+
+        try
+        {
+
+            Console.Write("Bölünecek değeri giriniz...");
+            bolunecek=Convert.ToInt32(Console.ReadLine());
+            
+            Console.Write("Bölen değeri giriniz...");
+            bolen=Convert.ToInt32(Console.ReadLine());
+
+            double sonuc = bolunecek/bolen;
+
+            Console.WriteLine($"{bolunecek} değerinin {bolen} değerine bölümünün sonucu : {sonuc}...");
+
+        }
+        catch (DivideByZeroException e)
+        {
+            Console.WriteLine($"Hata - Sıfıra bölüm işlemi gerçekleştirelemez...; Hata mesajı  : {e.Message}");
+
+           
+        }
+
+        catch (FormatException e)
+        {
+
+            Console.WriteLine($"Hata - Sadece Int32 türünde veri girişi yapabilirsiniz...; Hata mesajı  : {e.Message}");
+        }
+
+        catch (OverflowException e) 
+        {
+            Console.WriteLine($"Hata - Değişken sınırlarını aştınız...; Hata mesajı  : {e.Message}");
+        }
+
+        catch (Exception e) //geri kalan tüm hata durumlarında
+        {
+            Console.WriteLine($"Hata - Beklenmedik hata ...; Hata mesajı  : {e.Message}");
+        }
+
+
+
+        #endregion
 
         Console.ReadKey();
     }

@@ -75,7 +75,7 @@ namespace PO9_Methods
             Console.WriteLine("\nİşlem türü (+,-,*,/) :");
             string secenek= Console.ReadLine();
 
-            int sonuc=DortIslem(sayi1 , sayi2, secenek);
+            int sonuc=DortIslem(sayi1 , sayi2,secenek);
 
             Console.WriteLine($" Yapmak istediğiniz {secenek} işleminin sonucu : {sonuc}");
 
